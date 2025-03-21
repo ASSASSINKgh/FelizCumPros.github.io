@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(21, 118, 203);
+}
+
+h1{
+    color: rgb(196, 186, 245);
+    font-size: 130px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    margin: 10px;
+}
+h2{
+    color: rgb(34, 14, 134);
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    margin: 10px;
+}
+p{
+    color: rgb(16, 12, 117);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    margin: 10px;
+}
+a{
+    color: rgb(38, 32, 222);
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    margin: 10px;
+}
