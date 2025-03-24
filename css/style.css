@@ -29,4 +29,56 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 1000;
     margin: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
+a:hover {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    }
+footer{
+    color:rgb(216, 117, 117);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    
+}
+footer :hover{
+    font-size: 35px;
+    color: rgb(224, 32, 32);
+    cursor: pointer;
+}
+footer p {
+    font-family: 'Verdana', sans-serif !important;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+}
+
+.color-especifico {
+    color: #ffffff; /* El color que desees */
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
