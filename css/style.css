@@ -35,7 +35,7 @@ a{
 a:hover {
     font-size: 60px;
     color: rgb(255, 255, 255);
-    }
+}
 footer{
     color:rgb(216, 117, 117);
     font-size: 15px;
@@ -45,7 +45,6 @@ footer{
     padding: 20px;
     margin-top: 50px;
     letter-spacing: 2px;
-    
 }
 footer :hover{
     font-size: 35px;
@@ -55,11 +54,20 @@ footer :hover{
 footer p {
     font-family: 'Verdana', sans-serif !important;
     font-weight: 1000;
-    color: rgb(0, 0, 0);
+    color: rgb(154, 170, 207);
 }
 
 .color-especifico {
     color: #ffffff; /* El color que desees */
+}
+
+/* Estilos para el mensaje de contraseña incorrecta */
+.alerta {
+    font-size: 50px; /* Tamaño del texto */
+    color: red; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px;
 }
 
 

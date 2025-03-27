@@ -5,66 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <title>FC Prospaka😝</title>
-    
-    
+    <title>FC Prospaka 😝</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: none; }
 
+        /* Estilos para el formulario de contraseña */
+        #login {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #login h2 {
+            font-size: 250px; /* Tamaño del título */
+        }
+
+        #login input {
+            font-size: 100px; /* Tamaño del campo de contraseña */
+            padding: 100px;
+            width: 300px;
+        }
+
+        #login button {
+            font-size: 50px; /* Tamaño del botón */
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Mensaje de error */
+        #error-message {
+            font-size: 117px; /* Tamaño más grande para el mensaje de error */
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+
+        /* Estilos para el contenido */
+        #content {
+            font-size: 18px; /* Tamaño general del texto del contenido */
+        }
+
+        /* Ajustar los videos y los textos */
+        video {
+            margin: 20px;
+            max-width: 100%;
+        }
+    </style>
+</head>
 <body>
 
-    <header>
+    <!-- Formulario de contraseña -->
+    <div id="login">
+        <h2>CONTRASEÑA</h2>
+        <input type="password" id="password" placeholder="Clave">
+        <button onclick="checkPassword()">Entrar</button>
+        <p id="error-message">❌ Te equivocaste uto, no es esa.</p>
+    </div>
 
-    <h1>FELIZ CUM PROSPAKA</h1>
-    <p class="color-especifico">**Importante**: No modifique el zoom de la página por favor, pues ha sido diseñada para ofrecer una visualización óptima al 100%.</p>
-    
-    </header>
+    <!-- Contenido oculto hasta que ingrese la clave correcta -->
+    <div id="content" style="display: none;">
+        <header>
+            <h1>FELIZ CUM PROSPAKA</h1>
+            <p class="color-especifico">**Importante**: No modifique el zoom de la página por favor, pues ha sido diseñada para ofrecer una visualización óptima al 100%.</p>
+        </header>
 
-<div>
+        <div>
+            <p>
+                Ya 14 (24) años nenito eh, tas grande, hijo de pu. <br>
+                ya sabes que cualquier cosa estoy siempre para vos nenito
+            </p>
+            <p>Espero te guste todo esto😝😁</p>
+            <p>me hiciste programar algo despues de como un año ijoeuta.</p>
+        </div>
 
-    <p>
-        Ya 14 (24) años nenito eh, tas grande, hijo de pu. <br>
-        ya sabes que cualquier cosa estoy siempre para vos nenito
-    </p>
-    <p>
-    Espero te guste todo esto😝😁
-    </p>
-    <p>
-    me hiciste programar algo despues de como un año ijoeuta.
-    </p>
+        <br>
+        <div>
+            <h2>SOPLA LA VELA UTOOO</h2>
+            <video width="500" height="500" controls>
+                <source src="video/pros vela.mp4" type="video/mp4">
+            </video>
+        </div>
 
-</div>
-<br>
-<div>
-    <h2>SOPLA LA VELA UTOOO</h2>
-    <video width="500" height="500" controls>
-        <source src="video/pros vela.mp4" type="video/mp4">
+        <br>
+        <div>
+            <h2>Pensar que cuando te conocí eras así...</h2>
+            <video width="600" height="600" controls>
+                <source src="video/prospi bebe.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h2>y seguis siendo así pero bueno</h2>
 
-</div>
-<br>
-<div>
-    <h2>Pensar que cuando te conocí eras así...</h2>
-    <video width="600" height="600" controls>
-        <source src="video/prospi bebe.mp4" type="video/mp4">
-</div>
-<h2>y seguis siendo así pero bueno</h2>
+        <div>
+            <br><br>
+            <p>Esto es solo el comienzo...</p>
+            <br><br><br>
+            <p>ah y mira lo que te conseguí...</p>
+            <nav>
+                <br><br><br>
+                <a href="pages/saludos.html">SALUDOSSS</a>
+            </nav>
+        </div>
 
-<div>
-<br><br>
-    <p>Esto es solo el comienzo...</p>
-    <p>ah y mira lo que te conseguí...</p>
-    <nav>
+        <footer>
+            <p>©ASASA
+                <br>28/03/2025
+            </p>
+        </footer>
+    </div>
 
-        <br><br><br>
-        
-        <a href="pages/saludos.html" class="cambiar-texto" data-text="Estos son los saludos uto, entendiste?">SALUDOSSS</a>
-        <link rel="stylesheet" href="css/style.css">
+    <!-- Agregar el sonido de error -->
+    <audio id="error-sound" src="sound/Ayudense.mp3"></audio>
 
+    <script>
+        // Clave correcta para el acceso
+        const CLAVE_CORRECTA = "Prosassa"; // Cambia esto por tu clave
 
-    </nav>
+        function checkPassword() {
+            let password = document.getElementById("password").value; // Obtener el valor ingresado
+            let errorMessage = document.getElementById("error-message"); // El mensaje de error
+            let errorSound = document.getElementById("error-sound"); // El sonido de error
 
-</div>
+            // Verificar si la contraseña es correcta
+            if (password === CLAVE_CORRECTA) {
+                showContent(); // Si la contraseña es correcta, muestra el contenido
+            } else {
+                errorMessage.style.display = "block"; // Mostrar el mensaje de error
+                errorSound.play(); // Reproducir el sonido de error
+            }
+        }
 
-<footer>
-    <p>©ASASA</p>
-</footer>
+        // Función para mostrar el contenido después de ingresar la contraseña correcta
+        function showContent() {
+            document.getElementById("login").style.display = "none"; // Ocultar el formulario de contraseña
+            document.getElementById("content").style.display = "block"; // Mostrar el contenido
+            document.body.style.display = "block"; // Mostrar todo el cuerpo de la página
+        }
+
+        // Siempre pide la clave al abrir la página
+        document.body.style.display = "block";
+    </script>
 
 </body>
+</html>
